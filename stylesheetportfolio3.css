@@ -1,0 +1,220 @@
+body {
+  font-family: "Helvetica Neue";
+  margin: 0px;
+  ackground-color: gainsboro;
+  color: white;
+  background: url("moon.jpg") no-repeat center center fixed;
+  background-size: cover;
+  /*background: url("rimples.png") no-repeat center center fixed;
+  background-size: cover;*/
+  min-width: 340px;
+}
+
+.navbar {
+  background-color:
+    /* rgb(112, 3, 190)*/
+    cadetblue;
+  opacity: 0.95;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  font-size: 3vh;
+  box-shadow: 0px 0px 20px darkslategray
+}
+
+.navbar-header {
+  color: white;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+#navbarResponsive {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.nav-link {
+  color: white;
+}
+
+.cirkel {
+  margin-top: 5vw;
+  margin-bottom: 10vw;
+  border-radius: 50%;
+  border: solid 0.1px white;
+  width: 30vw;
+  height: 30vw;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 10px 10px darkslategray;
+
+  /* align-content: center;*/
+
+
+}
+
+.cirkel:hover {
+  transform: scale(1.4);
+  transition: 1s;
+}
+
+img {
+  width: 100%;
+
+}
+
+/*werkt niet
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+*/
+/*.scale-down {
+  position: absolute;
+  clip: rect(90px, 550px, 550px, 10px);
+object-fit: scale-down;
+height: 50vw;
+size: 110%;
+width: 50vw;
+border-radius: 50%;
+border: 10px solid green;
+transform: rotate(90deg);
+transform: scale(0.5);
+box-shadow: (20px 20px 10px black);
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 50%;
+}*/
+
+.welkom {
+  text-align: center;
+  font-size: 6vh;
+  text-shadow: 5px 5px 10px white;
+  color: darkred;
+  background-color: transparent;
+}
+
+.ondertitel {
+  text-align: center;
+  font-size: 4.5vh;
+  color: darkred;
+  text-shadow: 3px 3px 5px white;
+  margin-top: 10vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 10vw 35vw 10vw 35vw 10vw;
+  background-color: none;
+  margin: 0vw;
+}
+
+.screenshot-img-top {
+  width: 35vw;
+  height: auto;
+}
+
+.grid-item {
+  order: 1px solid rgba(0, 0, 0, 0.8);
+
+
+  height: 60vw;
+  margin-bottom: 10vw;
+}
+
+.grid-itemfoto {
+  display: block;
+  background-color: gainsboro;
+
+  height: min-content;
+  overflow: auto;
+  font-family: helvetica;
+  text-align: left;
+  height: 60vw;
+  margin-bottom: 10vw;
+  box-shadow: 10px 10px 10px darkslategray;
+}
+
+.grid-itemfoto:hover {
+  ackground-color: rgb(230, 239, 111);
+  /*background-image: radial-gradient(red, yellow);*/
+  /*width: 37vw;
+  height: 62vw;*/
+  transform: scale(1.03);
+  transition: 1s;
+}
+
+.itemimage {
+  padding: 20px;
+  height: 25vw;
+  margin-bottom: 10vw;
+}
+
+h3 {
+  line-height: 0.4vw;
+  margin-top: 2vw;
+  font-size: 2vw;
+  margin-left: 1vw;
+  color: darkslategray;
+}
+
+p {
+  margin-top: 2vw;
+  font-size: 1vw;
+  margin-left: 1vw;
+  color: darkslategray;
+}
+
+.knop {
+  height: 2vh;
+  background-color: darkred;
+  opacity: 0.95;
+  border: none;
+  color: white;
+  padding: 0.5vw;
+  text-align: center;
+  font-size: 1.3vw;
+  cursor: pointer;
+  margin-bottom: 2vh;
+  margin-left: 2vh;
+}
+
+.knop:hover {
+  background-color: lightblue;
+}
+
+.proef {
+  border-radius: 50%;
+}
+
+.footer {
+  width: 105%;
+  height: 70px;
+  background-color: lightgray;
+  opacity: 0.95;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 13px;
+}
+
+h4 {
+  font-size: 2vh;
+  color: lightblue;
+  text-align: center;
+  padding-bottom: 10vh;
+}

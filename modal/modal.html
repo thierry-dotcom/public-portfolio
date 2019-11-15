@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Modal login form</title>
+
+    <link href="stylesheetmodallogin.css" rel="stylesheet" />
+    <!--overgenomen van W3-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <!--navbar-->
+
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header text-center text-white">
+          <h1>DIVE, SWIM & SWALLOW</h1>
+        </div>
+      </div>
+    </nav>
+    <div class="hoofdzak">
+      <div class="tekstzak">
+        To book the swimming pool, please log in : <br />
+      </div>
+      <div class="knopzak">
+        <a href="#" id="button">Log In</a>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer">
+        <div class="row footer text-center ">
+          <div class="col-12">
+            <h4>
+              Customer service - SWIM : helpdesk.swim@gmail.com /
+              +32/2/661.81.81.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Modal section-->
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <img src="portretsmall.png" alt="avatar" />
+        <div class="input-members">
+          <form action="" method="POST">
+            <input type="text" placeholder="Email " name="uname" required />
+            <input type="text" placeholder="Password" name="psw" required />
+            <a href="#" class="button">Log In</a>
+          </form>
+        </div>
+        <div class="input-candidates">
+          <form action="">
+            If you are not registered yet, please provide us your:
+            <input
+              type="text"
+              placeholder="First Name, Last Name"
+              name="fullname"
+              required
+            />
+            <input type="text" placeholder="Email " name="uname" required />
+            <input type="text" placeholder="Password" name="psw" required />
+            <a href="#" class="button">Register</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("button").addEventListener("click", function() {
+        document.querySelector(".bg-modal").style.display = "flex";
+      });
+      document.querySelector(".close").addEventListener("click", function() {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+    </script>
+  </body>
+</html>
