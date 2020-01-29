@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="">
+        
+        
+<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+  margin-bottom: 0%;
+  border: hidden; /*werkt niet*/
+  
+ }
+
+body {
+  margin: 0;
+  font-family: 'Special Elite', cursive;
+  
+
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.screen {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.text1{
+    color: #f1f1f1;
+      font-size: 2vw;
+  text-shadow: 1px 1px 2px rgb(0, 255, 149);
+  padding-top: 15vh;
+}
+.text2{
+    color: black;
+    font-size: 1vw;
+    text-shadow: 1px 1px 2px rgb(0, 255, 149);
+  padding-top: 1vh;
+  margin-bottom: 2vh;
+}
+  .text1:hover{
+      color:black
+  }
+  .text2:hover{
+    color: #f1f1f1
+  }
+
+.audio {
+  margin: 0 auto;
+  height: 3vh;
+  width: 10vw
+  }
+audio::-webkit-media-controls-panel{
+  background-color: rgb(104, 103, 103);
+ 
+}
+
+/*
+#muziekknop{
+  
+}
+element.style{
+  
+}*/
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="cloudscape.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nAbR8fGZVRE?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+<div class="screen"></div>
+<div class="text">
+  
+  <marquee class="text1" behavior="scroll" direction="left" scrollamount="4">From blank to bla ck. Now, dark ness  comes  and en dures,       light can not break through, it can not  shine ...  hope gets gloo my  and  my force turns sour, anger strik es as ligth ning, the thun der rum bles in dispair.Giv ing  ress onance to the void. How emp ty life can be ? How long this ca n go on ? <big>Chapter 1. </big> Xxxxx</marquee>
+<marquee class="text2" behavior="scroll" direction="right" scrollamount="1">. ... eid lliw yromem teews ,edir a nam siht evig uoy fI ... daor eht no rellik a si erehT ... enola lla rotca ,nworht era ew dlrow siht otnI </marquee>
+</div>
+<audio id="muziekknop" controls loop style="position: absolute; margin: auto; padding-bottom: 35px; margin-left: 40%; border:none;">
+  <source src="Doors.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<!--<button id="myBtn" onclick="myFunction()">Pause</button>
+</div>-->
+
+<!--<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>-->
+
+</body>
+</html>

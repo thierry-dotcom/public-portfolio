@@ -1,0 +1,48 @@
+.parent {
+  background-color: red;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.childleft {
+  background-color: blueviolet;
+  width: 50vw;
+  height: 50vw;
+  justify-content: flex-start;
+}
+
+.childright {
+  background-color: cornflowerblue;
+  width: 50vw;
+  height: 50vw;
+  justify-content: flex-end;
+}
+
+.childcenterlogo {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  /*dezelfde eenheid in vw of vh om kauwgom-effect tegen te gaan*/
+  justify-content: center;
+  align-items: center;
+  background-image: url(Intec.groot.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  background-attachment: scroll;
+}
+
+.childcenterlogo:hover {
+  box-shadow: 10px 10px 20px 20px yellowgreen;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  div.childcenterlogo {
+    background-image: url(Intec.klein.png);
+  }
+}
